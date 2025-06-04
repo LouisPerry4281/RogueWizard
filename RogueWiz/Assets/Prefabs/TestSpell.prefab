@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8660310708791683274}
   - component: {fileID: 2022169236653132585}
   - component: {fileID: 8543352588779601802}
+  - component: {fileID: -7068237302454265017}
   m_Layer: 0
   m_Name: TestSpell
   m_TagString: Untagged
@@ -152,3 +153,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &-7068237302454265017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2843451560692759049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3604fa3f78b8746b99a0f0f4aac2527e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0

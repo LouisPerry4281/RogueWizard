@@ -1,9 +1,26 @@
 using UnityEngine;
 
-public class EnemyRecieveDamage : MonoBehaviour
+public class PlayerStats : MonoBehaviour
 {
+    public static PlayerStats instance;
+
+    [SerializeField] GameObject player;
+
     [SerializeField] float health;
     [SerializeField] float maxHealth;
+
+    void Awake()
+    {
+        if (instance != null)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(this);
+        }
+    }
 
     void Start()
     {
